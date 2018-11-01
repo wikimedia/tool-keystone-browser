@@ -42,6 +42,8 @@
         {% endfor %}
         <dt>Status</dt>
         <dd>{{ server.status }}</dd>
+        <dt>Host hypervisor</dt>
+        <dd>{{ server['OS-EXT-SRV-ATTR:hypervisor_hostname'] }}</dd>
         <dt>Type</dt>
         <dd>{{ flavor.name|default('UNKNOWN') }}</dd>
         <dt>Image</dt>
